@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#B42626"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-21dp"
+    tools:layout_editor_absoluteY="2dp">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Your Surname"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <Button
+        android:id="@+id/btnExplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#682438"
+        android:text="Send Explicit Intent"
+        app:layout_constraintBottom_toTopOf="@+id/btnImplicit"
+        app:layout_constraintStart_toStartOf="@+id/btnImplicit" />
+
+    <Button
+        android:id="@+id/btnImplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="300dp"
+        android:backgroundTint="#B3194D"
+        android:text="Send Implicit Intent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

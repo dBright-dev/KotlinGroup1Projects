@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Different Types of Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="373dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Enter Name (String)"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="364dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Enter Age (int)"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/txtSalary"
+        android:layout_width="370dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Enter Salary (Double)"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:text="Is Student? (Boolean)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalary" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="24dp"
+        android:text="Select your interests (ArrayList):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxStudent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sports"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxSports"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSports" />
+
+    <CheckBox
+        android:id="@+id/checkBoxReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reading"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMusic"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMusic" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxReading"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReading" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send Data to Second Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTravel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
